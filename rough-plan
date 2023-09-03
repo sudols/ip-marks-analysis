@@ -1,0 +1,52 @@
+#features
+    avg marks per student
+    avg marks per subject 
+    avg marks per class
+    students rank in class
+    classes rank in school
+
+
+#graph
+  get csv
+  store as db
+  get from db
+  process with matplotlib
+  show matplotlib
+
+
+this is a simple python project which is analyzes given data and shows a graph of these things:
+    avg marks per student;
+    avg marks per subject;
+    avg marks per class;
+    students rank in class;
+    classes rank in school;
+
+
+data is inputted and processs in the following manner:
+  get csv
+  store in db
+  get from db
+  process with matplotlib
+  show processed graph
+
+suggest how process can be inputed; stored; analyzed with code
+
+mysql is used for database
+
+
+csv/sql exam names:
+    perodic1
+    perodic2
+    halfyearly
+    annual
+
+
+subjects:
+    ip
+    math
+    applied_math
+    english
+    hindi
+    accountancy
+    business_studies
+    economics
