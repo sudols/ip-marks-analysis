@@ -2,18 +2,15 @@ import mysql.connector
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Connect to MySQL
 db = mysql.connector.connect(
     user='root',
     password='lol',
     database='ip_practical'
 )
 
-conn=db
-
 def fetch_data(query):
     """Fetch data from the database and return a DataFrame."""
-    cursor = conn.cursor()
+    cursor = db.cursor()
     cursor.execute(query)
     data = cursor.fetchall()
     columns = [column[0] for column in cursor.description]
@@ -31,7 +28,7 @@ def plot_average_marks_per_student():
     """
     df = fetch_data(query)
     
-    # Create a bar graph
+    #bar graph
     plt.figure(figsize=(10, 6))
     plt.bar(df['student_name'], df['avg_marks'], color='skyblue')
     plt.xlabel('Student')
